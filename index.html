@@ -12,7 +12,10 @@
 </head>
 <body>
     <div id="app" class="container">
-        
+        <h1>Vue Email List</h1>
+        <ol class="mail-list">
+            <li v-for="mail in mailList">{{ mail }}</li>
+        </ol>
     </div>
     
 
