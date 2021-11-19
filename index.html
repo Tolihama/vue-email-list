@@ -13,9 +13,10 @@
 <body>
     <div id="app" class="container">
         <h1>Vue Email List</h1>
-        <ol class="mail-list">
+        <ol v-if="mailListIsCompleted" class="mail-list">
             <li v-for="mail in mailList">{{ mail }}</li>
         </ol>
+        <h2 v-else>Caricamento...</h2>
     </div>
     
 

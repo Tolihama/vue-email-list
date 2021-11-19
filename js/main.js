@@ -4,6 +4,11 @@ const app = new Vue({
         apiURL: 'https://flynn.boolean.careers/exercises/api/random/mail',
         mailList: [],
     },
+    computed: {
+        mailListIsCompleted() {
+            return this.mailList.length === 10 ? true : false;
+        },
+    },
     created() {
         this.mailListGenerator();
     },

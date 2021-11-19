@@ -13,9 +13,17 @@ body {
     min-height: 100vh;
 }
 
-h1 {
+h1,
+h2 {
     text-align: center;
+}
+
+h1 {
     margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
 }
 
 .container .mail-list {
